@@ -11,6 +11,7 @@ from flask import Flask,session
 from flask_sqlalchemy import SQLAlchemy
 from redis import StrictRedis
 from flask_session import Session
+from flask_wtf.csrf import CSRFProtect
 
 app = Flask(__name__)
 
@@ -47,6 +48,8 @@ redis_store = StrictRedis(host=Config.REDIS_HOST, port=Config.REDIS_PORT, decode
 # 创建Session对象，读取app中session的信息
 Session(app)
 
+# 使用CSRFProtect保护app
+CSRFProtect(app)
 
 @app.route('/')
 def hello_world():
