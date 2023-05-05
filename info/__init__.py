@@ -4,7 +4,10 @@ from flask_session import Session
 from flask_wtf.csrf import CSRFProtect
 from config import config_dict
 from flask import Flask
-from info.modules.index import index_blue
+
+# 定义redis_store变量
+redis_store = None
+
 
 # 定义工厂方法
 def create_app(config_name):
@@ -20,6 +23,7 @@ def create_app(config_name):
     db = SQLAlchemy(app)
 
     # 创建redis对象
+    global redis_store  # global将局部变量升级为全局变量
     redis_store = StrictRedis(host=config.REDIS_HOST, port=config.REDIS_PORT, decode_responses=True)
 
     # 创建Session对象，读取app中session的信息
@@ -29,6 +33,7 @@ def create_app(config_name):
     CSRFProtect(app)
 
     # 将首页蓝图index_blue，注册到app中
+    from info.modules.index import index_blue
     app.register_blueprint(index_blue)
 
     return app
