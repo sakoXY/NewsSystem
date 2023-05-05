@@ -7,36 +7,16 @@
 """
 from datetime import timedelta
 
-from flask import Flask,session
+from flask import Flask, session
 from flask_sqlalchemy import SQLAlchemy
 from redis import StrictRedis
 from flask_session import Session
 from flask_wtf.csrf import CSRFProtect
+from config import Config
 
 app = Flask(__name__)
 
-
-# 设置配置信息
-class Config(object):
-    # 调试信息
-    DEBUG = True
-    SECRET_KEY = "asdfghgfddfghj"
-
-    # 数据库配置信息
-    SQLALCHEMY_DATABASE_URI = "mysql+pymysql://root:123456@localhost:3306/info"
-    SQLALCHEMY_TRACK_MODEFICATIONS = False
-
-    # redis 配置信息
-    REDIS_HOST = "127.0.0.1"
-    REDIS_PORT = 6379
-
-    # Session配置信息
-    SESSION_TYPE = "redis"  # 设置session存储类型
-    SESSION_REDIS = StrictRedis(host=REDIS_HOST, port=REDIS_PORT)  # 指定session存储的redis服务器
-    SESSION_USE_SIGNER = True  # 设置签名存储
-    PERMANENT_SESSION_LIFETIME = timedelta(days=2)  # 设置session有效期2天
-
-
+# 加载配置类
 app.config.from_object(Config)
 
 # 创建SQLAlchemy对象，关联app
@@ -50,6 +30,7 @@ Session(app)
 
 # 使用CSRFProtect保护app
 CSRFProtect(app)
+
 
 @app.route('/')
 def hello_world():
