@@ -9,3 +9,123 @@ INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\i
 INFO _internal.py:186  * Restarting with stat
 WARNING _internal.py:186  * Debugger is active!
 INFO _internal.py:186  * Debugger PIN: 842-804-468
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\index\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 842-804-468
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\index\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 842-804-468
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\index\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 842-804-468
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\index\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 842-804-468
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\index\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+INFO _internal.py:186 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:186 [33mPress CTRL+C to quit[0m
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 842-804-468
+DEBUG views.py:20  ‰»Îµ˜ ‘–≈œ¢
+INFO views.py:21  ‰»ÎœÍœ∏–≈œ¢
+WARNING views.py:22  ‰»ÎæØ∏Ê–≈œ¢
+ERROR views.py:23  ‰»Î¥ÌŒÛ–≈œ¢
+INFO _internal.py:186 127.0.0.1 - - [05/May/2023 22:11:37] "GET / HTTP/1.1" 200 -
+DEBUG views.py:20  ‰»Îµ˜ ‘–≈œ¢
+INFO views.py:21  ‰»ÎœÍœ∏–≈œ¢
+WARNING views.py:22  ‰»ÎæØ∏Ê–≈œ¢
+ERROR views.py:23  ‰»Î¥ÌŒÛ–≈œ¢
+INFO _internal.py:186 127.0.0.1 - - [05/May/2023 22:11:42] "GET / HTTP/1.1" 200 -
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\__init__.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 842-804-468
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\__init__.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 842-804-468
+DEBUG views.py:20  ‰»Îµ˜ ‘–≈œ¢
+INFO views.py:21  ‰»ÎœÍœ∏–≈œ¢
+WARNING views.py:22  ‰»ÎæØ∏Ê–≈œ¢
+ERROR views.py:23  ‰»Î¥ÌŒÛ–≈œ¢
+INFO _internal.py:186 127.0.0.1 - - [05/May/2023 22:12:46] "GET / HTTP/1.1" 200 -
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\__init__.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 842-804-468
+ERROR views.py:23  ‰»Î¥ÌŒÛ–≈œ¢
+INFO _internal.py:186 127.0.0.1 - - [05/May/2023 22:13:02] "GET / HTTP/1.1" 200 -
+ERROR views.py:23  ‰»Î¥ÌŒÛ–≈œ¢
+INFO _internal.py:186 127.0.0.1 - - [05/May/2023 22:13:02] "GET / HTTP/1.1" 200 -
+ERROR views.py:23  ‰»Î¥ÌŒÛ–≈œ¢
+INFO _internal.py:186 127.0.0.1 - - [05/May/2023 22:13:03] "GET / HTTP/1.1" 200 -
+ERROR views.py:23  ‰»Î¥ÌŒÛ–≈œ¢
+INFO _internal.py:186 127.0.0.1 - - [05/May/2023 22:13:06] "GET / HTTP/1.1" 200 -
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\__init__.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 842-804-468
+DEBUG views.py:20  ‰»Îµ˜ ‘–≈œ¢
+INFO views.py:21  ‰»ÎœÍœ∏–≈œ¢
+WARNING views.py:22  ‰»ÎæØ∏Ê–≈œ¢
+ERROR views.py:23  ‰»Î¥ÌŒÛ–≈œ¢
+INFO _internal.py:186 127.0.0.1 - - [05/May/2023 22:13:32] "GET / HTTP/1.1" 200 -
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\index\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 842-804-468
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\index\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 842-804-468
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\index\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 842-804-468
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\index\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 842-804-468
+DEBUG views.py:21  ‰»Îµ˜ ‘–≈œ¢
+INFO views.py:22  ‰»ÎœÍœ∏–≈œ¢
+WARNING views.py:23  ‰»ÎæØ∏Ê–≈œ¢
+ERROR views.py:24  ‰»Î¥ÌŒÛ–≈œ¢
+DEBUG views.py:27  ‰»Îµ˜ ‘–≈œ¢
+INFO views.py:28  ‰»ÎœÍœ∏–≈œ¢
+WARNING views.py:29  ‰»ÎæØ∏Ê–≈œ¢
+ERROR views.py:30  ‰»Î¥ÌŒÛ–≈œ¢
+INFO _internal.py:186 127.0.0.1 - - [05/May/2023 22:15:15] "GET / HTTP/1.1" 200 -
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\index\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 842-804-468
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\index\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 842-804-468
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\__init__.py', reloading
+INFO _internal.py:186  * Restarting with stat
+INFO _internal.py:186 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:186 [33mPress CTRL+C to quit[0m
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 842-804-468
+DEBUG views.py:21  ‰»Îµ˜ ‘–≈œ¢
+INFO views.py:22  ‰»ÎœÍœ∏–≈œ¢
+WARNING views.py:23  ‰»ÎæØ∏Ê–≈œ¢
+ERROR views.py:24  ‰»Î¥ÌŒÛ–≈œ¢
+INFO _internal.py:186 127.0.0.1 - - [05/May/2023 22:21:37] "GET / HTTP/1.1" 200 -
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\manager.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 842-804-468
+ERROR views.py:24  ‰»Î¥ÌŒÛ–≈œ¢
+INFO _internal.py:186 127.0.0.1 - - [05/May/2023 22:21:59] "GET / HTTP/1.1" 200 -
