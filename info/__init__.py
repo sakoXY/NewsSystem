@@ -11,10 +11,12 @@ from flask import Flask
 # 定义redis_store变量
 redis_store = None
 
+# 定义一个db的变量
+db = SQLAlchemy()
+
 
 # 定义工厂方法
 def create_app(config_name):
-
     app = Flask(__name__)
 
     # 根据传入的配置类名称，取出对应的配置类
@@ -27,7 +29,7 @@ def create_app(config_name):
     app.config.from_object(config)
 
     # 创建SQLAlchemy对象，关联app
-    db = SQLAlchemy(app)
+    db.init_app(app)
 
     # 创建redis对象
     global redis_store  # global将局部变量升级为全局变量
