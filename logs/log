@@ -519,3 +519,291 @@ INFO _internal.py:186 [33mPress CTRL+C to quit[0m
 INFO _internal.py:186  * Restarting with stat
 WARNING _internal.py:186  * Debugger is active!
 INFO _internal.py:186  * Debugger PIN: 581-365-903
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:44:03] "GET / HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:44:03] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:44:03] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:44:03] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:44:03] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:44:04] "[36mGET /static/news/js/index.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:44:04] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:44:04] "[36mGET /static/news/images/person01.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:44:04] "[36mGET /static/news/images/news_pic.jpg HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:44:04] "[36mGET /static/news/images/person.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:44:04] "GET /passport/image_code HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:44:04] "[36mGET /static/news/images/clock.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:44:04] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:44:04] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:44:06] "GET /static/news/images/shutoff.png HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:44:10] "GET / HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:44:10] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:44:10] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:44:10] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:44:10] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:44:10] "[36mGET /static/news/js/index.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:44:10] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:44:10] "[36mGET /static/news/images/person01.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:44:10] "[36mGET /static/news/images/news_pic.jpg HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:44:10] "[36mGET /static/news/images/person.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:44:10] "GET /passport/image_code HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:44:10] "[36mGET /static/news/images/clock.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:44:10] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:44:10] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:44:11] "[36mGET /static/news/images/shutoff.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:46:31] "GET / HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:46:31] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:46:31] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:46:31] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:46:31] "GET /static/news/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:46:31] "[36mGET /static/news/js/index.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:46:31] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:46:31] "[36mGET /static/news/images/person01.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:46:31] "[36mGET /static/news/images/news_pic.jpg HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:46:31] "[36mGET /static/news/images/person.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:46:31] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:46:31] "[36mGET /static/news/images/clock.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:46:31] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:46:31] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:46:32] "GET /passport/image_code?cur_id=f3b12093-d3eb-4be1-9eb6-c3dac40e798a&pre_id= HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:46:32] "[36mGET /static/news/images/shutoff.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:46:33] "GET /passport/image_code?cur_id=ec311599-481b-4706-8ac6-8efdc8f258c6&pre_id=f3b12093-d3eb-4be1-9eb6-c3dac40e798a HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:46:35] "GET /passport/image_code?cur_id=8a5e5c24-6040-40f6-b699-f49bf98edc85&pre_id=ec311599-481b-4706-8ac6-8efdc8f258c6 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:46:35] "GET /passport/image_code?cur_id=01b866d3-f08f-4899-8118-c364cdc2d016&pre_id=8a5e5c24-6040-40f6-b699-f49bf98edc85 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:46:36] "GET /passport/image_code?cur_id=f517a6af-dc9e-4225-b7b7-2f04d811875d&pre_id=01b866d3-f08f-4899-8118-c364cdc2d016 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:46:36] "GET /passport/image_code?cur_id=034b981d-2172-43d1-b1c1-c16fe3abd8f7&pre_id=f517a6af-dc9e-4225-b7b7-2f04d811875d HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:46:36] "GET /passport/image_code?cur_id=722a8be5-b6dd-4417-847f-47f9fb5c1981&pre_id=034b981d-2172-43d1-b1c1-c16fe3abd8f7 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:46:36] "GET /passport/image_code?cur_id=a6b462c1-b55a-4505-af76-e027a7bc71b8&pre_id=722a8be5-b6dd-4417-847f-47f9fb5c1981 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:46:37] "GET /passport/image_code?cur_id=fcdf0b07-010d-4b51-bfa4-bad2cb0ff4f6&pre_id=a6b462c1-b55a-4505-af76-e027a7bc71b8 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:47:45] "GET /passport/image_code?cur_id=ed663ad1-aa71-4485-91c8-65746e8bb82a&pre_id=fcdf0b07-010d-4b51-bfa4-bad2cb0ff4f6 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:47:45] "GET /passport/image_code?cur_id=2a9a3703-3f9f-44d0-ad88-80b726f50abe&pre_id=ed663ad1-aa71-4485-91c8-65746e8bb82a HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:47:45] "GET /passport/image_code?cur_id=b6bf80d6-2303-4bd1-918a-cc49bcfcdf9b&pre_id=2a9a3703-3f9f-44d0-ad88-80b726f50abe HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:47:46] "GET /passport/image_code?cur_id=c252ba97-6089-4d33-a3b6-cc14c4f38a18&pre_id=b6bf80d6-2303-4bd1-918a-cc49bcfcdf9b HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:47:46] "GET /passport/image_code?cur_id=0be12816-ae82-47a9-8afd-13ac1c91023f&pre_id=c252ba97-6089-4d33-a3b6-cc14c4f38a18 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:47:46] "GET /passport/image_code?cur_id=b2027ca8-4280-4bfb-905e-5fd40a75f93b&pre_id=0be12816-ae82-47a9-8afd-13ac1c91023f HTTP/1.1" 200 -
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\passport\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 581-365-903
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\passport\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 581-365-903
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\passport\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 581-365-903
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\passport\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 581-365-903
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\passport\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 581-365-903
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\passport\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 581-365-903
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\passport\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 581-365-903
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\passport\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 581-365-903
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\passport\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 581-365-903
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\passport\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 581-365-903
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\passport\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 581-365-903
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:58:12] "GET /passport/image_code?cur_id=4f03264c-a5d6-4896-90f8-34086920400f&pre_id=b2027ca8-4280-4bfb-905e-5fd40a75f93b HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:58:23] "GET /passport/image_code?cur_id=c92ff978-5be6-47c8-a8a2-8406eba074b1&pre_id=4f03264c-a5d6-4896-90f8-34086920400f HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 14:58:29] "GET /passport/image_code?cur_id=cc83879f-b4f5-424b-ae1b-0a4a2c40f5d8&pre_id=c92ff978-5be6-47c8-a8a2-8406eba074b1 HTTP/1.1" 200 -
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\passport\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 581-365-903
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\passport\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 581-365-903
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\passport\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+INFO _internal.py:186 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:186 [33mPress CTRL+C to quit[0m
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 581-365-903
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:00:40] "GET / HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:00:40] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:00:40] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:00:40] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:00:40] "GET /static/news/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:00:40] "[36mGET /static/news/js/index.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:00:40] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:00:40] "[36mGET /static/news/images/person01.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:00:40] "[36mGET /static/news/images/news_pic.jpg HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:00:40] "[36mGET /static/news/images/person.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:00:40] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:00:40] "[36mGET /static/news/images/clock.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:00:40] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:00:40] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:00:41] "GET /passport/image_code?cur_id=10862737-cb34-4dfa-8421-f83d30a3165e&pre_id= HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:00:41] "[36mGET /static/news/images/shutoff.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:01:09] "GET /passport/image_code?cur_id=95260fcf-7ec2-479e-a089-5921b36dd400&pre_id=10862737-cb34-4dfa-8421-f83d30a3165e HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:01:09] "GET /passport/image_code?cur_id=8cdaff48-55c9-4c38-80a9-94a975b98f3f&pre_id=95260fcf-7ec2-479e-a089-5921b36dd400 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:01:21] "GET /passport/image_code?cur_id=3e1b456a-c778-41c9-bc12-4d79e768766b&pre_id=8cdaff48-55c9-4c38-80a9-94a975b98f3f HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:01:21] "GET /passport/image_code?cur_id=7b0bab40-2188-4328-b31d-f84537acbf42&pre_id=3e1b456a-c778-41c9-bc12-4d79e768766b HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:01:21] "GET /passport/image_code?cur_id=2586c67e-99a6-4f24-8756-8f4fcab25a80&pre_id=7b0bab40-2188-4328-b31d-f84537acbf42 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:01:22] "GET /passport/image_code?cur_id=1068d9ab-b010-4b14-b213-b43e2cdd6740&pre_id=2586c67e-99a6-4f24-8756-8f4fcab25a80 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:01:22] "GET /passport/image_code?cur_id=733b17d3-c8b4-43a3-9d86-4c80127669d6&pre_id=1068d9ab-b010-4b14-b213-b43e2cdd6740 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:01:22] "GET /passport/image_code?cur_id=e6a77369-9046-435d-9c61-aad5263bbcdb&pre_id=733b17d3-c8b4-43a3-9d86-4c80127669d6 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:01:22] "GET /passport/image_code?cur_id=316f4482-538b-4daa-90a8-7e97762f4da2&pre_id=e6a77369-9046-435d-9c61-aad5263bbcdb HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:01:22] "GET /passport/image_code?cur_id=44ce77ee-f66d-48d4-a755-96b7c15200ed&pre_id=316f4482-538b-4daa-90a8-7e97762f4da2 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:01:23] "GET /passport/image_code?cur_id=2faf5c16-8de2-4245-a07d-193624278e7a&pre_id=44ce77ee-f66d-48d4-a755-96b7c15200ed HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:01:23] "GET /passport/image_code?cur_id=85f0ccc1-b0dd-4ac3-bc49-fb42705b5103&pre_id=2faf5c16-8de2-4245-a07d-193624278e7a HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:01:23] "GET /passport/image_code?cur_id=0a9fbf66-b11d-48ac-8165-1cd549dd9706&pre_id=85f0ccc1-b0dd-4ac3-bc49-fb42705b5103 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:01:23] "GET /passport/image_code?cur_id=321eec7a-8f12-433e-b50b-af5cd54e7bfe&pre_id=0a9fbf66-b11d-48ac-8165-1cd549dd9706 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:01:23] "GET /passport/image_code?cur_id=2ab7ea5a-3b82-45dd-aacf-940cb60bb1b2&pre_id=321eec7a-8f12-433e-b50b-af5cd54e7bfe HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:01:23] "GET /passport/image_code?cur_id=3d46b245-b7b5-47eb-8522-341ab55b9903&pre_id=2ab7ea5a-3b82-45dd-aacf-940cb60bb1b2 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:01:23] "GET /passport/image_code?cur_id=57d9a852-6792-426f-a7cf-363a33b6a54e&pre_id=3d46b245-b7b5-47eb-8522-341ab55b9903 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:01:24] "GET /passport/image_code?cur_id=cb0fe094-4a48-4b66-a162-f7a01bc35b79&pre_id=57d9a852-6792-426f-a7cf-363a33b6a54e HTTP/1.1" 200 -
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\passport\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 581-365-903
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\passport\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+INFO _internal.py:186 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:186 [33mPress CTRL+C to quit[0m
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 581-365-903
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:10:18] "GET /passport/image_code HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:10:20] "GET /passport/image_code HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:10:20] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:10:21] "GET /passport/image_code HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:10:21] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:10:23] "GET / HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:10:23] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:10:23] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:10:23] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:10:23] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:10:23] "[36mGET /static/news/js/index.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:10:23] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:10:23] "[36mGET /static/news/images/person01.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:10:23] "[36mGET /static/news/images/news_pic.jpg HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:10:23] "[36mGET /static/news/images/person.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:10:23] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:10:23] "[36mGET /static/news/images/clock.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:10:23] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:10:23] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:10:24] "GET /passport/image_code?cur_id=00a09ac0-0645-4bfa-acf0-40309ff72071&pre_id= HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:10:24] "[36mGET /static/news/images/shutoff.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:10:25] "GET /passport/image_code?cur_id=874b2734-d49c-4767-82a0-641714cd1cf9&pre_id=00a09ac0-0645-4bfa-acf0-40309ff72071 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:10:25] "GET /passport/image_code?cur_id=1c009196-ef75-4756-ac5c-24fea99162e8&pre_id=874b2734-d49c-4767-82a0-641714cd1cf9 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:10:27] "GET /passport/image_code HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:10:27] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:10:27] "GET /passport/image_code HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:10:27] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:10:53] "GET /passport/image_code HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:10:53] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:11:52] "GET /passport/image_code HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:11:52] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:11:53] "GET /passport/image_code HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:11:53] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:11:53] "GET /passport/image_code HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:11:53] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:11:53] "GET /passport/image_code HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:11:53] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:11:55] "GET /passport/image_code HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:11:55] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:11:55] "GET /passport/image_code HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:11:55] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:11:55] "GET /passport/image_code HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:11:55] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:11:55] "GET /passport/image_code HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:11:55] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:11:55] "GET /passport/image_code HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:11:55] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:11:56] "GET /passport/image_code HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:11:56] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:11:56] "GET /passport/image_code HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:11:56] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:11:56] "GET /passport/image_code HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:11:56] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:11:56] "GET /passport/image_code HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:11:56] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:12:04] "GET /passport/image_code HTTP/1.1" 200 -
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\passport\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 581-365-903
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:12:05] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:12:05] "GET /passport/image_code HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:12:07] "GET /passport/image_code HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:12:07] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:12:29] "GET /passport/image_code HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:12:29] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:12:30] "GET /passport/image_code HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:12:30] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:13:14] "GET /passport/image_code HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:13:14] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:13:23] "GET / HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:13:23] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:13:23] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:13:23] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:13:23] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:13:23] "[36mGET /static/news/js/index.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:13:23] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:13:23] "[36mGET /static/news/images/person01.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:13:23] "[36mGET /static/news/images/news_pic.jpg HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:13:23] "[36mGET /static/news/images/person.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:13:23] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:13:23] "[36mGET /static/news/images/clock.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:13:23] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:13:24] "GET /passport/image_code?cur_id=a9cc2159-1f2a-4c97-ad30-38520eb497b8&pre_id= HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:13:24] "[36mGET /static/news/images/shutoff.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:13:26] "GET /passport/image_code?cur_id=1371651d-3a13-4526-be15-78ef657ebeba&pre_id=a9cc2159-1f2a-4c97-ad30-38520eb497b8 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:13:30] "GET /passport/image_code HTTP/1.1" 200 -
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\passport\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 581-365-903
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:16:30] "GET /passport/image_code HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:16:30] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\passport\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 581-365-903
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:16:38] "GET /passport/image_code HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:16:38] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:16:38] "GET /passport/image_code HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:16:38] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:16:39] "GET /passport/image_code HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:16:39] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:16:39] "GET /passport/image_code HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:16:39] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:16:39] "GET /passport/image_code HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:16:39] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:16:39] "GET /passport/image_code HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [06/May/2023 15:16:39] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\passport\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 581-365-903
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\passport\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 581-365-903
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\passport\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
