@@ -45,6 +45,12 @@ def create_app(config_name):
     from info.modules.index import index_blue
     app.register_blueprint(index_blue)
 
+    # 将认证蓝图passport_blue，注册到app中
+    from info.modules.passport import passport_blue
+    app.register_blueprint(passport_blue)
+
+    print(app.url_map)
+
     return app
 
 
