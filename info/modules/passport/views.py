@@ -33,8 +33,13 @@ def register():
     :return:
     """
     # 1. 获取参数
-    json_data = request.data
-    dict_data = json.loads(json_data)
+    # json_data = request.data
+    # dict_data = json.loads(json_data)
+
+    # 可以替换掉上面的两句话
+    dict_data = request.json
+    # dict_data = request.get_json()  # 等价于上面那句话
+
     mobile = dict_data.get("mobile")
     sms_code = dict_data.get("sms_code")
     password = dict_data.get("password")
@@ -109,8 +114,10 @@ def sms_code():
     :return:
     """
     # 1. 获取参数
-    json_data = request.data
-    dict_data = json.loads(json_data)
+    # json_data = request.data
+    # dict_data = json.loads(json_data)
+    dict_data = request.json # request.get_json()
+
     mobile = dict_data.get("mobile")
     image_code = dict_data.get("image_code")
     image_code_id = dict_data.get("image_code_id")
