@@ -58,15 +58,19 @@ class User(BaseModel, db.Model):
     # 当前用户所发布的新闻
     news_list = db.relationship('News', backref='user', lazy='dynamic')
 
+    # 使用property装饰的方法，可以当成属性来用，比如：print(user.password)
     @property
     def password(self):
         raise AttributeError("当前属性不可读")
 
+    # @password.setter给password方法，加了一个设置方法，比如：user.password = "xyxy"
     @password.setter
     def password(self, value):
+        # 使用了系统的generate_password_hash方法，使用的是sha256算法加密
         self.password_hash = generate_password_hash(value)
 
     def check_passowrd(self, password):
+        # 系统提供的校验密码的方法，check_password_hash，传递密文和明文，返回true或false
         return check_password_hash(self.password_hash, password)
 
     def to_dict(self):

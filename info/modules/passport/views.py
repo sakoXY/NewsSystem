@@ -76,8 +76,8 @@ def register():
 
     # 8. 设置用户对象属性
     user.nick_name = mobile
-    user.password_hash = password
-    # user.password = password  # 密码的加密处理
+    # user.password_hash = password
+    user.password = password  # 密码的加密处理
     user.mobile = mobile
     user.signature = "该用户很懒,什么都没写"
 
