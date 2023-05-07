@@ -4,7 +4,7 @@ from ... import redis_store
 import logging
 from flask import current_app, render_template, session, jsonify
 
-from ...models import User, News
+from ...models import User, News, Category
 from ...utils.response_code import RET
 
 
@@ -33,11 +33,24 @@ def hello_world():
     for item in news:
         news_list.append(item.to_dict())
 
+    # 5. 查询所有的分类数据
+    try:
+        categories = Category.query.all()
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR, errmsg="获取分类失败")
+
+    # 6. 将分类的对象列表转成字典列表
+    category_list = []
+    for category in categories:
+        category_list.append(category.to_dict())
+
     # 3. 拼接用户数据，渲染页面
     data = {
         # 如果user有值，返回左边的内容，否则返回右边的值
         "user_info": user.to_dict() if user else "",
-        "news_list": news_list
+        "news_list": news_list,
+        "category_list": category_list,
     }
 
     return render_template("news/index.html", data=data)
