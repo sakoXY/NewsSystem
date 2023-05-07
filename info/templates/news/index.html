@@ -95,7 +95,9 @@
             <ul class="rank_list">
                 {# 遍历热门新闻 #}
                 {% for news in data.news_list %}
+                    {# 第一种方式 #}
                     {# 根据遍历的索引设置标签的样式 #}
+                    {#
                     {% if loop.index == 1 %}
                         <li><span class="first">{{ loop.index }}</span><a href="#">{{ news.title }}</a></li>
                     {% elif loop.index == 2 %}
@@ -105,7 +107,9 @@
                     {% else %}
                         <li><span class="">{{ loop.index }}</span><a href="#">{{ news.title }}</a></li>
                     {% endif %}
-
+                    #}
+                    {# 第二种方式 #}
+                    <li><span class="{{ loop.index | my_filter }}">{{ loop.index }}</span><a href="#">{{ news.title }}</a></li>
                 {% endfor %}
                 {#
                 <li><span class="first">1</span><a href="#">势如破竹！人民币再度连闯四道关口 在岸、离岸双双升破6.42</a></li>
