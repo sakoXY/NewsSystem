@@ -1139,3 +1139,29 @@ INFO _internal.py:186 127.0.0.1 - - [07/May/2023 19:29:03] "POST /passport/sms_c
 INFO _internal.py:186 127.0.0.1 - - [07/May/2023 19:29:04] "GET /passport/image_code?cur_id=c25bab64-8537-4830-83c2-d3ee0bf67364&pre_id=a90fcfe5-002a-43b2-bd5f-9c8cf61961c4 HTTP/1.1" 200 -
 INFO _internal.py:186 127.0.0.1 - - [07/May/2023 19:29:18] "POST /passport/sms_code HTTP/1.1" 200 -
 INFO _internal.py:186 127.0.0.1 - - [07/May/2023 19:30:37] "GET /passport/image_code?cur_id=d63a9609-12f9-4f29-85c5-d0a4ebf75769&pre_id=c25bab64-8537-4830-83c2-d3ee0bf67364 HTTP/1.1" 200 -
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\passport\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 842-804-468
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\passport\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 842-804-468
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\passport\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 842-804-468
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\passport\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 842-804-468
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\passport\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 842-804-468
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\passport\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+INFO _internal.py:186 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:186 [33mPress CTRL+C to quit[0m
+INFO _internal.py:186  * Restarting with stat
