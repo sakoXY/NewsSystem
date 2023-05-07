@@ -807,3 +807,50 @@ WARNING _internal.py:186  * Debugger is active!
 INFO _internal.py:186  * Debugger PIN: 581-365-903
 INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\passport\\views.py', reloading
 INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 581-365-903
+INFO _internal.py:186 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:186 [33mPress CTRL+C to quit[0m
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 842-804-468
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 14:21:55] "GET / HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 14:21:56] "GET /static/news/css/reset.css HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 14:21:56] "GET /static/news/css/main.css HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 14:21:56] "GET /static/news/js/jquery-1.12.4.min.js HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 14:21:56] "GET /static/news/js/main.js HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 14:21:56] "GET /static/news/js/index.js HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 14:21:56] "GET /static/news/images/logo.png HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 14:21:56] "GET /static/news/images/person01.png HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 14:21:56] "GET /static/news/images/news_pic.jpg HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 14:21:56] "GET /static/news/images/person.png HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 14:21:56] "GET /static/news/images/pic_code.png HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 14:21:56] "GET /static/news/images/clock.png HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 14:21:56] "GET /static/news/images/hit_icon.png HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 14:21:56] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 14:22:05] "GET / HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 14:22:05] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 14:22:05] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 14:22:06] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 14:22:06] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 14:22:06] "[36mGET /static/news/js/index.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 14:22:06] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 14:22:06] "[36mGET /static/news/images/person01.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 14:22:06] "[36mGET /static/news/images/news_pic.jpg HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 14:22:06] "[36mGET /static/news/images/person.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 14:22:06] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 14:22:06] "[36mGET /static/news/images/clock.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 14:22:06] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 14:22:27] "GET /passport/image_code?cur_id=3003d65a-32ed-4c41-abd7-1e9812826b44&pre_id= HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 14:22:27] "[36mGET /static/news/images/shutoff.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\libs\\yuntongxun\\sms.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 842-804-468
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\libs\\__init__.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 842-804-468
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\libs\\yuntongxun\\sms.py', reloading
+INFO _internal.py:186  * Restarting with stat
