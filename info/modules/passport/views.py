@@ -1,3 +1,4 @@
+import datetime
 import json
 
 from flask import request, current_app, make_response, jsonify, session
@@ -74,6 +75,14 @@ def login():
 
     # 6. 将用户的登陆信息保存在session中
     session["user_id"] = user.id
+
+    # 6.1 记录用户最后一次的登陆时间
+    user.last_login = datetime.datetime.now()
+
+    try:
+        db.session.commit()
+    except Exception as e:
+        current_app.logger.error(e)
 
     # 7. 返回响应
     return jsonify(errno=RET.OK, errmsg="登陆成功")
