@@ -1281,3 +1281,65 @@ INFO _internal.py:186 [31m[1mWARNING: This is a development server. Do not use
  * Running on http://127.0.0.1:5000
 INFO _internal.py:186 [33mPress CTRL+C to quit[0m
 INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 842-804-468
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 20:08:54] "GET /passport/image_code?cur_id=a96772f2-119b-43ee-a0c7-98bcef53adfd&pre_id= HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 20:08:54] "[36mGET /static/news/images/shutoff.png HTTP/1.1[0m" 304 -
+DEBUG views.py:157 ∂Ã–≈—È÷§¬Î « = 951094
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 20:09:04] "POST /passport/sms_code HTTP/1.1" 200 -
+ERROR views.py:89 (pymysql.err.IntegrityError) (1062, "Duplicate entry '13812341234' for key 'info_user.mobile'")
+[SQL: INSERT INTO info_user (create_time, update_time, nick_name, password_hash, mobile, avatar_url, last_login, is_admin, signature, gender) VALUES (%(create_time)s, %(update_time)s, %(nick_name)s, %(password_hash)s, %(mobile)s, %(avatar_url)s, %(last_login)s, %(is_admin)s, %(signature)s, %(gender)s)]
+[parameters: {'create_time': datetime.datetime(2023, 5, 7, 20, 9, 14, 373946), 'update_time': datetime.datetime(2023, 5, 7, 20, 9, 14, 373946), 'nick_name': '13812341234', 'password_hash': 'pbkdf2:sha256:600000$gCWs2OqX573vFvlE$5b2b8b9a856c128c5a85ba64b05fb26b60daa2d50d19d7228ada62ef8f64a19e', 'mobile': '13812341234', 'avatar_url': None, 'last_login': datetime.datetime(2023, 5, 7, 20, 9, 14, 373946), 'is_admin': 0, 'signature': '∏√”√ªß∫‹¿¡, ≤√¥∂º√ª–¥', 'gender': 'MAN'}]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 20:09:14] "POST /passport/register HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 20:09:29] "GET / HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 20:09:29] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 20:09:29] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 20:09:29] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 20:09:29] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 20:09:29] "[36mGET /static/news/js/index.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 20:09:29] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 20:09:29] "[36mGET /static/news/images/person01.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 20:09:29] "[36mGET /static/news/images/news_pic.jpg HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 20:09:29] "[36mGET /static/news/images/person.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 20:09:29] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 20:09:29] "[36mGET /static/news/images/clock.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 20:09:29] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 20:09:29] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 20:09:30] "GET /passport/image_code?cur_id=c885d621-ad91-4261-81d2-2617c06bcf6a&pre_id= HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 20:09:30] "[36mGET /static/news/images/shutoff.png HTTP/1.1[0m" 304 -
+DEBUG views.py:157 ∂Ã–≈—È÷§¬Î « = 626515
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 20:09:41] "POST /passport/sms_code HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 20:09:55] "POST /passport/register HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 20:09:55] "GET / HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 20:09:55] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 20:09:55] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 20:09:55] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 20:09:55] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 20:09:55] "[36mGET /static/news/js/index.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 20:09:55] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 20:09:55] "[36mGET /static/news/images/person01.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 20:09:55] "[36mGET /static/news/images/news_pic.jpg HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 20:09:55] "[36mGET /static/news/images/person.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 20:09:55] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 20:09:55] "[36mGET /static/news/images/clock.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 20:09:55] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [07/May/2023 20:09:55] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\passport\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 842-804-468
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\passport\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 842-804-468
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\passport\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 842-804-468
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\passport\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+INFO _internal.py:186 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:186 [33mPress CTRL+C to quit[0m
+INFO _internal.py:186  * Restarting with stat
