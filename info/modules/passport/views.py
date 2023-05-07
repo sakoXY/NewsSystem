@@ -79,10 +79,10 @@ def login():
     # 6.1 记录用户最后一次的登陆时间
     user.last_login = datetime.datetime.now()
 
-    try:
-        db.session.commit()
-    except Exception as e:
-        current_app.logger.error(e)
+    # try:
+    #     db.session.commit()
+    # except Exception as e:
+    #     current_app.logger.error(e)
 
     # 7. 返回响应
     return jsonify(errno=RET.OK, errmsg="登陆成功")

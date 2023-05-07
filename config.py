@@ -13,6 +13,7 @@ class Config(object):
     # 数据库配置信息
     SQLALCHEMY_DATABASE_URI = "mysql+pymysql://root:123456@localhost:3306/info"
     SQLALCHEMY_TRACK_MODEFICATIONS = False
+    SQLALCHEMY_COMMIT_ON_TEARDOWN = True # 每当改变数据的内容之后，在视图函数结束的时候都会自动提交
 
     # redis 配置信息
     REDIS_HOST = "127.0.0.1"
