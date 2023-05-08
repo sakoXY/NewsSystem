@@ -33,7 +33,7 @@ def news_detail(news_id):
 
     # 2. 如果新闻对象不存在，直接抛出异常
     if not news:
-        abort(408)
+        abort(404)
 
     # 3. 获取前6条热门新闻
     try:
