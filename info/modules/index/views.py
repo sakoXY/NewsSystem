@@ -39,8 +39,28 @@ def newslist():
 
     # 3. 分页查询
     try:
-        paginate = News.query.filter(News.category_id == cid).order_by(News.create_time.desc()).paginate(page, per_page,
-                                                                                                         False)
+        """
+        # 判断新闻的分类是否为1
+        if cid == "1":
+            paginate = News.query.filter().order_by(News.create_time.desc()).paginate()
+        else:
+            paginate = News.query.filter(News.category_id == cid).order_by(News.create_time.desc()).paginate()
+        """
+
+        """
+        # 改装,判断新闻的分类是否为1
+        filters = ""
+        if cid != "1":
+            filters = (News.category_id == cid)
+        paginate = News.query.filter(filters).order_by(News.create_time.desc()).paginate()
+        """
+
+        # 改装,判断新闻的分类是否为1
+        filters = []
+        if cid != "1":
+            filters.append(News.category_id == cid)
+        paginate = News.query.filter(*filters).order_by(News.create_time.desc()).paginate()
+
     except Exception as e:
         current_app.logger.error(e)
         return jsonify(errno=RET.DBERR, errmsg="获取新闻失败")
