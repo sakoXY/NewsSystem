@@ -12,7 +12,7 @@
 
 {# 3. header分类部分 #}
 {% block headerBlock %}
-    <ul class="menu fl">#}
+    <ul class="menu fl">
         {# 遍历分类数据 #}
         {% for category in data.category_list %}
             <li class="{% if loop.index0 == 0 %}active{% endif %}" data-cid="{{ category.id }}"><a href="javascript:;">{{ category.name }}</a></li>
