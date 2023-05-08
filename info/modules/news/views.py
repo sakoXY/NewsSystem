@@ -59,7 +59,7 @@ def news_collect():
             g.user.collection_news.append(news)
     else:
         # 7.2 判断用户是否对该新闻有做过收藏
-        if not news in g.user.collection_news:
+        if news in g.user.collection_news:
             g.user.collection_news.remove(news)
 
     # 8. 返回响应
