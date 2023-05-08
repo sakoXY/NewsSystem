@@ -4017,3 +4017,117 @@ INFO _internal.py:186 127.0.0.1 - - [08/May/2023 12:36:00] "GET /newslist?page=2
 INFO _internal.py:186 127.0.0.1 - - [08/May/2023 12:36:01] "GET /newslist?page=3&cid=6&per_page=5 HTTP/1.1" 200 -
 INFO _internal.py:186 127.0.0.1 - - [08/May/2023 12:36:02] "GET /newslist?page=4&cid=6&per_page=5 HTTP/1.1" 200 -
 INFO _internal.py:186 127.0.0.1 - - [08/May/2023 12:36:04] "GET /newslist?page=5&cid=6&per_page=5 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 12:39:20] "GET /newslist?page=1&cid=5&per_page=5 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 12:39:20] "GET /newslist?page=2&cid=5&per_page=5 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 12:39:21] "GET /newslist?page=3&cid=5&per_page=5 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 12:50:32] "GET /newslist?page=1&cid=6&per_page=5 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 12:50:32] "GET /newslist?page=2&cid=6&per_page=5 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 12:50:34] "GET /newslist?page=1&cid=3&per_page=5 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 12:50:35] "GET /newslist?page=1&cid=2&per_page=5 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 12:50:36] "GET /newslist?page=1&cid=1&per_page=5 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 12:50:38] "GET /newslist?page=1&cid=4&per_page=5 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 12:50:42] "[33mGET /news/8 HTTP/1.1[0m" 404 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 12:50:44] "[33mGET /news/149 HTTP/1.1[0m" 404 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 12:54:37] "GET /newslist?page=1&cid=2&per_page=5 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 12:54:38] "GET /newslist?page=1&cid=4&per_page=5 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 12:54:39] "GET /newslist?page=1&cid=2&per_page=5 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 12:54:40] "GET /newslist?page=1&cid=3&per_page=5 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 12:54:40] "GET /newslist?page=1&cid=5&per_page=5 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 12:54:41] "GET /newslist?page=1&cid=6&per_page=5 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 12:54:41] "GET /newslist?page=1&cid=5&per_page=5 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 12:54:42] "GET /newslist?page=1&cid=4&per_page=5 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 12:54:42] "GET /newslist?page=1&cid=3&per_page=5 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 12:54:43] "GET /newslist?page=1&cid=2&per_page=5 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 12:54:43] "GET /newslist?page=1&cid=1&per_page=5 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 12:54:44] "GET /newslist?page=1&cid=6&per_page=5 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 12:54:50] "GET /newslist?page=2&cid=6&per_page=5 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 12:54:52] "GET /newslist?page=3&cid=6&per_page=5 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:04:18] "GET /newslist?page=1&cid=4&per_page=5 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:04:19] "GET /newslist?page=1&cid=3&per_page=5 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:04:19] "GET /newslist?page=1&cid=2&per_page=5 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:04:19] "GET /newslist?page=1&cid=1&per_page=5 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:04:22] "GET /newslist?page=1&cid=2&per_page=5 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:04:23] "GET /newslist?page=1&cid=3&per_page=5 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:04:23] "GET /newslist?page=1&cid=4&per_page=5 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:20] "GET / HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:20] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:20] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:20] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:20] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:20] "[36mGET /static/news/js/index.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:20] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:20] "[36mGET /static/news/images/news_pic.jpg HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:20] "[36mGET /static/news/images/person.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:20] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:20] "[36mGET /static/news/images/clock.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:20] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:20] "GET /newslist?page=1&cid=1&per_page=5 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:20] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:21] "GET / HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:21] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:21] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:21] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:21] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:21] "[36mGET /static/news/js/index.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:21] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:21] "[36mGET /static/news/images/news_pic.jpg HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:21] "[36mGET /static/news/images/person.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:21] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:21] "[36mGET /static/news/images/clock.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:21] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:21] "GET /newslist?page=1&cid=1&per_page=5 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:21] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:21] "GET / HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:21] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:21] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:21] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:21] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:21] "[36mGET /static/news/js/index.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:21] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:21] "[36mGET /static/news/images/news_pic.jpg HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:21] "[36mGET /static/news/images/person.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:21] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:21] "[36mGET /static/news/images/clock.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:21] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:22] "GET /newslist?page=1&cid=1&per_page=5 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:22] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:22] "GET / HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:22] "[36mGET /static/news/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:22] "[36mGET /static/news/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:22] "[36mGET /static/news/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:22] "[36mGET /static/news/js/main.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:22] "[36mGET /static/news/js/index.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:22] "[36mGET /static/news/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:22] "[36mGET /static/news/images/news_pic.jpg HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:22] "[36mGET /static/news/images/person.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:22] "[36mGET /static/news/images/pic_code.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:22] "[36mGET /static/news/images/clock.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:22] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:22] "GET /newslist?page=1&cid=1&per_page=5 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [08/May/2023 13:08:22] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\news\\__init__.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 581-365-903
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\news\\__init__.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 581-365-903
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\news\\__init__.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 581-365-903
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\news\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 581-365-903
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\news\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 581-365-903
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\__init__.py', reloading
+INFO _internal.py:186  * Restarting with stat
+INFO _internal.py:186 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:186 [33mPress CTRL+C to quit[0m
+INFO _internal.py:186  * Restarting with stat
