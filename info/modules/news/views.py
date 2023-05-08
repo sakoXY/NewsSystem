@@ -41,8 +41,8 @@ def news_detail(news_id):
 
     # 4. 将热门新闻的对象列表，转成字典列表
     click_news_list = []
-    for news in click_news:
-        click_news_list.append(news.to_dict())
+    for item_news in click_news:
+        click_news_list.append(item_news.to_dict())
 
     # 2. 携带数据渲染页面
     data = {
