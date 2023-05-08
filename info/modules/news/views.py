@@ -175,12 +175,25 @@ def news_detail(news_id):
         if news in g.user.collection_news:
             is_collected = True
 
+    # 6. 查询数据库中，该新闻的所有评论内容
+    try:
+        comments = Comment.query.filter(Comment.news_id == news_id).order_by(Comment.create_time.desc()).all()
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR, errmsg="获取评论失败")
+
+    # 7. 将评论的对象列表转成字典列表
+    comments_list = []
+    for comment in comments:
+        comments_list.append(comment.to_dict())
+
     # 2. 携带数据渲染页面
     data = {
         "news_info": news.to_dict(),
         "user_info": g.user.to_dict() if g.user else "",
         "news_list": click_news_list,
-        "is_collected": is_collected
+        "is_collected": is_collected,
+        "comments": comments_list
     }
 
     return render_template("news/detail.html", data=data)
