@@ -5393,3 +5393,7 @@ INFO _internal.py:186 127.0.0.1 - - [08/May/2023 22:25:35] "[36mGET /static/new
 INFO _internal.py:186 127.0.0.1 - - [08/May/2023 22:25:35] "[36mGET /static/news/images/hit_icon.png HTTP/1.1[0m" 304 -
 INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\utils\\commons.py', reloading
 INFO _internal.py:186  * Restarting with stat
+INFO _internal.py:186 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO _internal.py:186 [33mPress CTRL+C to quit[0m
+INFO _internal.py:186  * Restarting with stat
