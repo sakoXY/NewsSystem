@@ -2,9 +2,10 @@
 from . import index_blue
 from ... import redis_store
 import logging
-from flask import current_app, render_template, session, jsonify, request
+from flask import current_app, render_template, session, jsonify, request, g
 
 from ...models import User, News, Category
+from ...utils.commons import user_login_data
 from ...utils.response_code import RET
 
 
@@ -81,17 +82,18 @@ def newslist():
 
 
 @index_blue.route('/', methods=['GET', 'POST'])
+@user_login_data
 def hello_world():
-    # 1. 获取用户的登录信息
-    user_id = session.get("user_id")
-
-    # 2. 通过user_id取出用户对象
-    user = None
-    if user_id:
-        try:
-            user = User.query.get(user_id)
-        except Exception as e:
-            current_app.logger.error(e)
+    # # 1. 获取用户的登录信息
+    # user_id = session.get("user_id")
+    #
+    # # 2. 通过user_id取出用户对象
+    # user = None
+    # if user_id:
+    #     try:
+    #         user = User.query.get(user_id)
+    #     except Exception as e:
+    #         current_app.logger.error(e)
 
     # 3. 根据点击量，查询前10条新闻
     try:
@@ -120,7 +122,7 @@ def hello_world():
     # 3. 拼接用户数据，渲染页面
     data = {
         # 如果user有值，返回左边的内容，否则返回右边的值
-        "user_info": user.to_dict() if user else "",
+        "user_info": g.user.to_dict() if g.user else "",
         "news_list": news_list,
         "category_list": category_list,
     }

@@ -1,7 +1,8 @@
-from flask import current_app, jsonify, render_template, abort, session
+from flask import current_app, jsonify, render_template, abort, session, g
 
 from . import news_blue
 from ...models import News, User
+from ...utils.commons import user_login_data
 from ...utils.response_code import RET
 
 
@@ -10,17 +11,18 @@ from ...utils.response_code import RET
 # 请求参数:news_id
 # 返回值: detail.html页面, 用户data字典数据
 @news_blue.route('/<int:news_id>')
+@user_login_data
 def news_detail(news_id):
-    # 0. 从session中取出用户的user_id
-    user_id = session.get("user_id")
-
-    # 0.1 通过user_id取出用户对象
-    user = None
-    if user_id:
-        try:
-            user = User.query.get(user_id)
-        except Exception as e:
-            current_app.logger.error(e)
+    # # 0. 从session中取出用户的user_id
+    # user_id = session.get("user_id")
+    #
+    # # 0.1 通过user_id取出用户对象
+    # user = None
+    # if user_id:
+    #     try:
+    #         user = User.query.get(user_id)
+    #     except Exception as e:
+    #         current_app.logger.error(e)
 
     # 1. 根据新闻编号，查询新闻对象
     try:
@@ -47,7 +49,7 @@ def news_detail(news_id):
     # 2. 携带数据渲染页面
     data = {
         "news_info": news.to_dict(),
-        "user_info": user.to_dict() if user else "",
+        "user_info": g.user.to_dict() if g.user else "",
         "news_list": click_news_list
     }
 
