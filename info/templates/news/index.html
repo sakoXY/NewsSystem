@@ -1,5 +1,33 @@
 {% extends 'news/base.html' %}
 
+{# 1. 重写title部分 #}
+{% block titleBlock %}
+    <title> 首页 </title>
+{% endblock %}
+
+{# 2. script部分 #}
+{% block scriptBlock %}
+    <script type="text/javascript" src="../../static/news/js/index.js"></script>
+{% endblock %}
+
+{# 3. header分类部分 #}
+{% block headerBlock %}
+    <ul class="menu fl">#}
+        {# 遍历分类数据 #}
+        {% for category in data.category_list %}
+            <li class="{% if loop.index0 == 0 %}active{% endif %}" data-cid="{{ category.id }}"><a href="javascript:;">{{ category.name }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+
+{# 4. 重写新闻列表部分 #}
+{% block contentBlock %}
+    <ul class="list_con fl">
+        <span style="color:grey;">正在拼命加载数据......</span>
+    </ul>
+{% endblock %}
+
+
 {#<!DOCTYPE html>#}
 {#<html lang="en">#}
 {#<head>#}
