@@ -8,6 +8,58 @@ from ...utils.commons import user_login_data
 from ...utils.response_code import RET
 
 
+# 用户新闻列表
+# 请求路径: /user/news_list
+# 请求方式:GET
+# 请求参数:p
+# 返回值:GET渲染user_news_list.html页面
+@profile_blue.route('/news_list')
+@user_login_data
+def news_list():
+    """
+    1. 获取参数,p
+    2. 参数类型转换
+    3. 分页查询收藏的新闻
+    4. 获取分页对象属性,总页数,当前页,当前页对象列表
+    5. 将对象列表,转成字典列表
+    6. 拼接数据,渲染页面
+    :return:
+    """
+    # 1. 获取参数,p
+    page = request.args.get("p", "1")
+
+    # 2. 参数类型转换
+    try:
+        page = int(page)
+    except Exception as e:
+        page = 1
+
+    # 3. 分页查询用户发布的新闻
+    try:
+        paginate = News.query.filter(News.user_id == g.user.id).order_by(News.create_time.desc()).paginate(page=page, max_per_page=3)
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR, errmsg="获取新闻失败")
+
+    # 4. 获取分页对象属性,总页数,当前页,当前页对象列表
+    totalPage = paginate.pages
+    currentPage = paginate.page
+    items = paginate.items
+
+    # 5. 将对象列表,转成字典列表
+    news_list = []
+    for news in items:
+        news_list.append(news.to_review_dict())
+
+    # 6. 拼接数据,渲染页面
+    data = {
+        "totalPage": totalPage,
+        "currentPage": currentPage,
+        "news_list": news_list
+    }
+    return render_template("users/user_news_list.html", data=data)
+
+
 # 获取/设置,新闻发布
 # 请求路径: /user/news_release
 # 请求方式:GET,POST
