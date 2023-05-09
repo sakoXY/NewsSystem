@@ -2,7 +2,7 @@ from flask import current_app, jsonify, render_template, abort, session, g, requ
 
 from . import news_blue
 from ... import db
-from ...models import News, User, Comment
+from ...models import News, User, Comment, CommentLike
 from ...utils.commons import user_login_data
 from ...utils.response_code import RET
 
@@ -182,10 +182,35 @@ def news_detail(news_id):
         current_app.logger.error(e)
         return jsonify(errno=RET.DBERR, errmsg="获取评论失败")
 
+    # 6.1 用户所有点过赞的评论编号
+    try:
+        commentLikes = []
+        if g.user:
+            # 6.1.1 该用户点过的所有的赞
+            commentLikes = CommentLike.query.filter(CommentLike.user_id == g.user.id).all()
+
+        # 6.1.2 获取用户所有点赞过的评论编号
+        mylike_comment_ids = []
+        for commentLike in commentLikes:
+            mylike_comment_ids.append(commentLike.comment_id)
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR, errmsg="获取点赞失败")
+
     # 7. 将评论的对象列表转成字典列表
     comments_list = []
     for comment in comments:
-        comments_list.append(comment.to_dict())
+        # 奖评论对象转字典
+        comment_dict = comment.to_dict()
+
+        # 添加is_like，用来记录是否点赞了
+        comment_dict["is_like"] = False
+
+        # 判断用户是否点过赞
+        if g.user and comment.id in mylike_comment_ids:
+            comment_dict["is_like"] = True
+
+        comments_list.append(comment_dict)
 
     # 2. 携带数据渲染页面
     data = {
