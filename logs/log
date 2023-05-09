@@ -9866,3 +9866,5 @@ WARNING _internal.py:186  * Debugger is active!
 INFO _internal.py:186  * Debugger PIN: 581-365-903
 INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\news\\views.py', reloading
 INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 581-365-903
