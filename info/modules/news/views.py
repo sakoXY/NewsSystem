@@ -29,64 +29,64 @@ def comment_like():
     if not g.user:
         return jsonify(errno=RET.NODATA, errmsg="用户未登录")
 
-        # 2. 获取参数
-        comment_id = request.json.get("comment_id")
-        action = request.json.get("action")
+    # 2. 获取参数
+    comment_id = request.json.get("comment_id")
+    action = request.json.get("action")
 
-        # 3. 参数校验,为空校验
-        if not all([comment_id, action]):
-            return jsonify(errno=RET.PARAMERR, errmsg="参数不全")
+    # 3. 参数校验,为空校验
+    if not all([comment_id, action]):
+        return jsonify(errno=RET.PARAMERR, errmsg="参数不全")
 
-        # 4. 操作类型进行校验
-        if not action in ["add", "remove"]:
-            return jsonify(errno=RET.DATAERR, errmsg="操作类型有误")
+    # 4. 操作类型进行校验
+    if not action in ["add", "remove"]:
+        return jsonify(errno=RET.DATAERR, errmsg="操作类型有误")
 
-        # 5. 通过评论编号查询评论对象,并判断是否存在
-        try:
-            comment = Comment.query.get(comment_id)
-        except Exception as e:
-            current_app.logger.error(e)
-            return jsonify(errno=RET.DBERR, errmsg="获取评论失败")
+    # 5. 通过评论编号查询评论对象,并判断是否存在
+    try:
+        comment = Comment.query.get(comment_id)
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR, errmsg="获取评论失败")
 
-        if not comment:
-            return jsonify(errno=RET.NODATA, errmsg="评论不存在")
+    if not comment:
+        return jsonify(errno=RET.NODATA, errmsg="评论不存在")
 
-        # 6. 根据操作类型点赞取消点赞
-        try:
-            if action == "add":
-                # 6.1 判断用户是否有对该评论点过赞
-                comment_like = CommentLike.query.filter(CommentLike.user_id == g.user.id,
-                                                        CommentLike.comment_id == comment_id).first()
-                if not comment_like:
-                    # 创建点赞对象
-                    comment_like = CommentLike()
-                    comment_like.user_id = g.user.id
-                    comment_like.comment_id = comment_id
+    # 6. 根据操作类型点赞取消点赞
+    try:
+        if action == "add":
+            # 6.1 判断用户是否有对该评论点过赞
+            comment_like = CommentLike.query.filter(CommentLike.user_id == g.user.id,
+                                                    CommentLike.comment_id == comment_id).first()
+            if not comment_like:
+                # 创建点赞对象
+                comment_like = CommentLike()
+                comment_like.user_id = g.user.id
+                comment_like.comment_id = comment_id
 
-                    # 添加到数据库中
-                    db.session.add(comment_like)
+                # 添加到数据库中
+                db.session.add(comment_like)
 
-                    # 将该评论的点赞数量+1
-                    comment.like_count += 1
-                    db.session.commit()
-            else:
-                # 6.2 判断用户是否有对该评论点过赞
-                comment_like = CommentLike.query.filter(CommentLike.user_id == g.user.id,
-                                                        CommentLike.comment_id == comment_id).first()
-                if comment_like:
-                    # 删除点赞对象
-                    db.session.delete(comment_like)
+                # 将该评论的点赞数量+1
+                comment.like_count += 1
+                db.session.commit()
+        else:
+            # 6.2 判断用户是否有对该评论点过赞
+            comment_like = CommentLike.query.filter(CommentLike.user_id == g.user.id,
+                                                    CommentLike.comment_id == comment_id).first()
+            if comment_like:
+                # 删除点赞对象
+                db.session.delete(comment_like)
 
-                    # 将该评论的点赞数量1
-                    if comment.like_count > 0:
-                        comment.like_count -= 1
-                    db.session.commit()
-        except Exception as e:
-            current_app.logger.error(e)
-            return jsonify(errno=RET.DBERR, errmsg="操作失败")
+                # 将该评论的点赞数量1
+                if comment.like_count > 0:
+                    comment.like_count -= 1
+                db.session.commit()
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR, errmsg="操作失败")
 
-        # 7. 返回响应
-        return jsonify(errno=RET.OK, errmsg="操作成功")
+    # 7. 返回响应
+    return jsonify(errno=RET.OK, errmsg="操作成功")
 
 
 # 新闻评论后端
