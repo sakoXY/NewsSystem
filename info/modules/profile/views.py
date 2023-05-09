@@ -1,6 +1,8 @@
-from flask import render_template, g, redirect, request, jsonify
+from flask import render_template, g, redirect, request, jsonify, current_app
 
+from info.utils.image_storage import image_store
 from . import profile_blue
+from ... import constants
 from ...utils.commons import user_login_data
 from ...utils.response_code import RET
 
@@ -72,10 +74,31 @@ def pic_info():
 
     # 3. 如果是post请求
     # 4. 获取参数
+    avatar = request.files.get("avatar")
+
     # 5. 校验参数,为空校验
+    if not avatar:
+        return jsonify(errno=RET.PARAMERR, errmsg="图片不能为空")
+
     # 6. 上传图像,判断图片是否上传成功
+    try:
+        # 读取图片为二进制，上传图片
+        image_name = image_store(avatar.read())
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.THIRDERR, errmsg="七牛云异常")
+
+    if not image_name:
+        return jsonify(errno=RET.DATAERR, errmsg="图片上传失败")
+
     # 7. 将图片设置到用户对象
+    g.user.avatar_url = image_name
+
     # 8. 返回响应
+    data = {
+        "avatar_url": constants.QINIU_DOMIN_PREFIX + image_name
+    }
+    return jsonify(errno=RET.OK, errmsg='上传成功', data=data)
 
 
 # 获取/设置用户基本信息
