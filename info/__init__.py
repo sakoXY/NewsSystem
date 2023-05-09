@@ -6,7 +6,7 @@ from redis import StrictRedis
 from flask_session import Session
 from flask_wtf.csrf import CSRFProtect, generate_csrf
 from config import config_dict
-from flask import Flask
+from flask import Flask, render_template
 
 from info.utils.commons import hot_news_filter
 
@@ -80,6 +80,12 @@ def create_app(config_name):
         return resp
 
     print(app.url_map)
+
+    # 使用errorhandler统一处理404异常信息
+    @app.errorhandler(404)
+    def page_not_found(e):
+        return render_template("news/404.html", data={})
+        # return redirect("/404")
 
     return app
 
