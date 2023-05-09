@@ -70,9 +70,9 @@
                     {# 判断是否有父评论 #}
                     {% if comment.parent %}
                         <div class="reply_text_con fl">
-                            <div class="user_name2">用户李思</div>
+                            <div class="user_name2">{{ comment.parent.user.nick_name }}</div>
                             <div class="reply_text">
-                                遏制茅台酒价格过快上涨，多渠道供给，就不一定要买，租茅台酒也可以的，租售同权。开发共有产权茅台酒，让老百姓喝得起茅台酒，饮者有其酒。
+                                {{ comment.parent.content }}
                         </div>
                     </div>
                     {% endif %} 
