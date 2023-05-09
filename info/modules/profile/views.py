@@ -2,10 +2,90 @@ from flask import render_template, g, redirect, request, jsonify, current_app
 
 from info.utils.image_storage import image_store
 from . import profile_blue
-from ... import constants
-from ...models import News
+from ... import constants, db
+from ...models import News, Category
 from ...utils.commons import user_login_data
 from ...utils.response_code import RET
+
+
+# 获取/设置,新闻发布
+# 请求路径: /user/news_release
+# 请求方式:GET,POST
+# 请求参数:GET无, POST ,title, category_id,digest,index_image,content
+# 返回值:GET请求,user_news_release.html, data分类列表字段数据, POST,errno,errmsg
+@profile_blue.route('/news_release', methods=['GET', 'POST'])
+@user_login_data
+def news_release():
+    """
+    1. 判断请求方式,如果是GET
+    2. 携带分类数据渲染页面
+    3. 如果是POST,获取参数
+    4. 校验参数,为空校验
+    5. 上传图片,判断是否上传成功
+    6. 创建新闻对象,设置属性
+    7. 保存到数据
+    8. 返回响应
+    :return:
+    """
+    # 1. 判断请求方式,如果是GET
+    if request.method == "GET":
+        # 2.查询所有的分类数据
+        try:
+            categories = Category.query.all()
+        except Exception as e:
+            current_app.logger.error(e)
+            return jsonify(errno=RET.DBERR, errmsg="获取分类失败")
+
+        category_list = []
+        for category in categories:
+            category_list.append(category.to_dict())
+
+        # 2.1 携带分类数据渲染页面
+        return render_template("users/user_news_release.html", categories=category_list)
+
+    # 3. 如果是POST,获取参数
+    title = request.form.get("title")
+    category_id = request.form.get("category_id")
+    digest = request.form.get("digest")
+    index_image = request.files.get("index_image")
+    content = request.form.get("content")
+
+    # 4. 校验参数,为空校验
+    if not all([title, category_id, digest, index_image, content]):
+        return jsonify(errno=RET.PARAMERR, errmsg="参数不全")
+
+    # 5. 上传图片,判断是否上传成功
+    try:
+        # 读取图片为二进制数据,上传
+        image_name = image_store(index_image.read())
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.THIRDERR, errmsg="七牛云异常")
+
+    if not image_name:
+        return jsonify(errno=RET.NODATA, errmsg="图片上传失败")
+
+    # 6. 创建新闻对象,设置属性
+    news = News()
+    news.title = title
+    news.source = g.user.nick_name
+    news.digest = digest
+    news.content = content
+    news.index_image_url = constants.QINIU_DOMIN_PREFIX + image_name
+    news.category_id = category_id
+    news.user_id = g.user.id
+    news.status = 1  # 表示审核中
+
+    # 7. 保存到数据
+    try:
+        db.session.add(news)
+        db.session.commit()
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR, errmsg="新闻发布失败")
+
+    # 8. 返回响应
+    return jsonify(errno=RET.OK, errmsg="发布成功")
 
 
 # 获取新闻收藏列表
