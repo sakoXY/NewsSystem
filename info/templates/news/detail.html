@@ -22,7 +22,7 @@
                 {{ data.news_info.digest }}
             </p>
 
-             新闻的正文内容
+{#             新闻的正文内容#}
             {{ data.news_info.content | safe }}
 
         <a href="javascript:;" class="collection block-center" data-newid="{{ data.news_info.id }}" style="display: {% if data.is_collected %} none {% else %} block {% endif %}">收藏</a>
