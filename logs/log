@@ -9862,3 +9862,7 @@ INFO _internal.py:186 127.0.0.1 - - [09/May/2023 22:25:00] "[36mGET /static/new
 INFO _internal.py:186 127.0.0.1 - - [09/May/2023 22:25:00] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
 INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\news\\views.py', reloading
 INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 581-365-903
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\news\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
