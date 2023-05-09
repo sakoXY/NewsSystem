@@ -134,3 +134,13 @@ def hello_world():
 @index_blue.route("/favicon.ico")
 def get_web_logo():
     return current_app.send_static_file("news/favicon.ico")
+
+
+# 统一的返回404页面
+@index_blue.route('/404')
+@user_login_data
+def page_not_found():
+    data = {
+        "user_info": g.user.to_dict() if g.user else ""
+    }
+    return render_template("news/404.html", data=data)
