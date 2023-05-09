@@ -8,6 +8,58 @@ from ...utils.commons import user_login_data
 from ...utils.response_code import RET
 
 
+# 获取我的关注
+# 请求路径: /user/user_follow
+# 请求方式: GET
+# 请求参数:p
+# 返回值: 渲染user_follow.html页面,字典data数据
+@profile_blue.route('/user_follow')
+@user_login_data
+def user_follow():
+    """
+    1. 获取参数,p
+    2. 参数类型转换
+    3. 分页查询收藏的新闻
+    4. 获取分页对象属性,总页数,当前页,当前页对象列表
+    5. 将对象列表,转成字典列表
+    6. 拼接数据,渲染页面
+    :return:
+    """
+    # 1. 获取参数,p
+    page = request.args.get("p", "1")
+
+    # 2. 参数类型转换
+    try:
+        page = int(page)
+    except Exception as e:
+        page = 1
+
+    # 3. 分页查询用户关注的作者
+    try:
+        paginate = g.user.followed.paginate(page=page, max_per_page=2)
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR, errmsg="获取作者失败")
+
+    # 4. 获取分页对象属性,总页数,当前页,当前页对象列表
+    totalPage = paginate.pages
+    currentPage = paginate.page
+    items = paginate.items
+
+    # 5. 将对象列表,转成字典列表
+    author_list = []
+    for author in items:
+        author_list.append(author.to_dict())
+
+    # 6. 拼接数据,渲染页面
+    data = {
+        "totalPage": totalPage,
+        "currentPage": currentPage,
+        "author_list": author_list
+    }
+    return render_template("users/user_follow.html", data=data)
+
+
 # 用户新闻列表
 # 请求路径: /user/news_list
 # 请求方式:GET
@@ -36,7 +88,8 @@ def news_list():
 
     # 3. 分页查询用户发布的新闻
     try:
-        paginate = News.query.filter(News.user_id == g.user.id).order_by(News.create_time.desc()).paginate(page=page, max_per_page=3)
+        paginate = News.query.filter(News.user_id == g.user.id).order_by(News.create_time.desc()).paginate(page=page,
+                                                                                                           max_per_page=3)
     except Exception as e:
         current_app.logger.error(e)
         return jsonify(errno=RET.DBERR, errmsg="获取新闻失败")
