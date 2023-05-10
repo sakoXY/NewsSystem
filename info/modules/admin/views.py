@@ -1,7 +1,21 @@
-from flask import render_template, request, session, redirect, current_app
+from flask import render_template, request, session, redirect, current_app, g
 
 from . import admin_blue
 from ...models import User
+from ...utils.commons import user_login_data
+
+
+# 请求路径: /admin/index
+# 请求方式: GET
+# 请求参数: 无
+# 返回值:渲染页面index.html,user字典数据
+@admin_blue.route('/index')
+@user_login_data
+def admin_index():
+    data = {
+        "user_info": g.user.to_dict() if g.user else ""
+    }
+    return render_template("admin/index.html", data=data)
 
 
 # 获取/登陆,管理员登陆
@@ -52,4 +66,4 @@ def admin_login():
     session["is_admin"] = True
 
     # 7.重定向到首页展示
-    return redirect("http://www.baidu.com")
+    return redirect("/admin/index")
