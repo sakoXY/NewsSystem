@@ -20,7 +20,8 @@
 			<h3 class="review_title">新闻版式编辑</h3>
 	    	<div class="form_group">
 	    		<label>新闻标题：</label>
-	    		<input type="text" class="input_txt2" value="{{ news.title }}">
+                {# 不想此处被更改 #}
+	    		<input type="text" class="input_txt2" value="{{ news.title }}" readonly>
 	    	</div>
 	    	<div class="form_group">
 				<label>新闻分类：</label>
