@@ -45,13 +45,36 @@ def news_review_detail():
         # 4. 携带新闻对象的数据渲染页面
         return render_template("admin/news_review_detail.html", news=news.to_dict())
 
-    # 5. 如果是POST请求,获取参数
-    pass
+    # 5.如果是POST请求,获取参数
+    action = request.json.get("action")
+    news_id = request.json.get("news_id")
 
-    # 6. 校验操作类型,为空校验
-    # 7. 根据编号,获取新闻对象,判断新闻对象是否存在
-    # 8. 根据操作类型改变新闻的状态
-    # 9. 返回响应
+    # 6.校验操作类型,为空校验
+    if not all([news_id, action]):
+        return jsonify(errno=RET.PARAMERR, errmsg="参数不全")
+
+    if not action in ["accept", "reject"]:
+        return jsonify(errno=RET.DATAERR, errmsg="操作类型有误")
+
+    # 7.根据编号,获取新闻对象,判断新闻对象是否存在
+    try:
+        news = News.query.get(news_id)
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR, errmsg="获取新闻失败")
+
+    if not news:
+        return jsonify(errno=RET.NODATA, errmsg="该新闻不存在")
+
+    # 8.根据操作类型改变新闻的状态
+    if action == "accept":
+        news.status = 0
+    else:
+        news.status = -1
+        news.reason = request.json.get("reason", "")
+
+    # 9.返回响应
+    return jsonify(errno=RET.OK, errmsg="操作成功")
 
 
 # 获取/设置新闻审核列表

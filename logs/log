@@ -11497,3 +11497,56 @@ INFO _internal.py:186 127.0.0.1 - - [10/May/2023 15:58:30] "[36mGET /static/adm
 INFO _internal.py:186 127.0.0.1 - - [10/May/2023 15:58:30] "[36mGET /static/admin/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.woff HTTP/1.1[0m" 304 -
 INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\admin\\views.py', reloading
 INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 581-365-903
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\admin\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 581-365-903
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 16:11:26] "GET /admin/index HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 16:11:26] "[36mGET /static/admin/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 16:11:26] "[36mGET /static/admin/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 16:11:26] "[36mGET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 16:11:26] "[36mGET /static/admin/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 16:11:26] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 16:11:27] "[36mGET /static/admin/images/person.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 16:11:27] "[36mGET /static/admin/images/icons.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 16:11:27] "[36mGET /static/admin/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 16:11:27] "[36mGET /static/admin/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 16:11:27] "[36mGET /static/admin/js/echarts.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 16:11:27] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 16:11:29] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 16:11:29] "[36mGET /static/admin/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 16:11:29] "[36mGET /static/admin/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 16:11:29] "[36mGET /static/admin/js/echarts.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 16:11:32] "GET /admin/user_count HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 16:11:32] "[36mGET /static/admin/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 16:11:32] "[36mGET /static/admin/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 16:11:32] "[36mGET /static/admin/js/echarts.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 16:11:33] "GET /admin/user_list HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 16:11:33] "[36mGET /static/admin/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 16:11:33] "[36mGET /static/admin/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 16:11:33] "[36mGET /static/admin/css/jquery.pagination.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 16:11:33] "[36mGET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 16:11:33] "[36mGET /static/admin/js/jquery.pagination.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 16:11:35] "GET /admin/news_review HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 16:11:35] "[36mGET /static/admin/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 16:11:35] "[36mGET /static/admin/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 16:11:35] "[36mGET /static/admin/css/jquery.pagination.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 16:11:35] "[36mGET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 16:11:35] "[36mGET /static/admin/js/jquery.pagination.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 16:12:16] "GET /admin/news_review_detail?news_id=1156 HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 16:12:16] "[36mGET /static/admin/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 16:12:16] "[36mGET /static/admin/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 16:12:16] "[36mGET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 16:12:16] "[36mGET /static/admin/tinymce/js/tinymce/tinymce.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 16:12:16] "GET /static/admin/js/news_review_detail.js HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 16:12:16] "[36mGET /static/admin/tinymce/js/tinymce/themes/modern/theme.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 16:12:16] "[36mGET /static/admin/tinymce/js/tinymce/langs/zh_CN.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 16:12:16] "[36mGET /static/admin/tinymce/js/tinymce/skins/lightgray/skin.min.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 16:12:17] "[36mGET /static/admin/tinymce/js/tinymce/skins/lightgray/content.min.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 16:12:17] "[36mGET /static/admin/tinymce/js/tinymce/skins/lightgray/fonts/tinymce.woff HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 16:12:19] "[35m[1mPOST /admin/news_review_detail HTTP/1.1[0m" 500 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 16:12:20] "[35m[1mPOST /admin/news_review_detail HTTP/1.1[0m" 500 -
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\admin\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
