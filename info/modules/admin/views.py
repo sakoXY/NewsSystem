@@ -36,7 +36,7 @@ def news_review():
     # 3. 分页查询待审核,未通过的新闻数据
     try:
 
-        # 3.1判断是否有填写搜索关键
+        # 3.1判断是否有填写搜索关键（模糊查询！）
         filters = [News.status != 0]
         if keywords:
             filters.append(News.title.contains(keywords))
