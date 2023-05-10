@@ -3,8 +3,10 @@ import time
 from flask import render_template, request, session, redirect, current_app, g, jsonify
 
 from . import admin_blue
+from ... import constants
 from ...models import User, News, Category
 from ...utils.commons import user_login_data
+from ...utils.image_storage import image_store
 from ...utils.response_code import RET
 
 
@@ -59,12 +61,46 @@ def news_edit_detail():
         return render_template("admin/news_edit_detail.html", news=news.to_dict(), category_list=category_list)
 
     # 5.如果是POST请求,获取参数(news_id,title,digest,content,index_image,category_id)
-    pass
+    news_id = request.form.get("news_id")
+    title = request.form.get("title")
+    digest = request.form.get("digest")
+    content = request.form.get("content")
+    index_image = request.files.get("index_image")
+    category_id = request.form.get("category_id")
+
     # 6.参数校验,为空校验
+    if not all([news_id, title, digest, content, index_image, category_id]):
+        return jsonify(errno=RET.PARAMERR, errmsg="参数不全")
+
     # 7.根据新闻的编号取出新闻对象
+    try:
+        news = News.query.get(news_id)
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.DBERR, errmsg="获取新闻失败")
+
+    if not news:
+        return jsonify(errno=RET.NODATA, errmsg="新闻不存在")
+
     # 8.上传新闻图片
+    try:
+        image_name = image_store(index_image.read())
+    except Exception as e:
+        current_app.logger.error(e)
+        return jsonify(errno=RET.THIRDERR, errmsg="七牛云异常")
+
+    if not image_name:
+        return jsonify(errno=RET.NODATA, errmsg="图片上传失败")
+
     # 9.设置新闻对象的属性
+    news.title = title
+    news.digest = digest
+    news.content = content
+    news.index_image_url = constants.QINIU_DOMIN_PREFIX + image_name
+    news.category_id = category_id
+
     # 10.返回响应
+    return jsonify(errno=RET.OK, errmsg="编辑成功")
 
 
 # 新闻版式编辑
