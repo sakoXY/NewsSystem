@@ -16,7 +16,7 @@ body{
 	width:100%;
 	height:60px;
 	overflow:hidden;
-	background:#2f4050;
+	background: #3996fe;
 	position:fixed;
 	left:0px;
 	top:0px;
@@ -31,7 +31,7 @@ body{
 .header .logout{
 	width:90px;
 	height:30px;
-	background:url(../images/icons.png) 10px -344px no-repeat #1ab394;
+	background:url(../images/icons.png) 10px -344px no-repeat #ae2126;
 	margin:15px 20px 0 0;
 	border-radius:4px;
 	text-indent:40px;
@@ -43,15 +43,15 @@ body{
 .header .logout:hover{
 	width:88px;
 	height:28px;
-	border:1px solid #1ab394;
-	background:url(../images/icons.png) 10px -344px no-repeat #2f4050;
+	border:1px solid #ae2126;
+	background:url(../images/icons.png) 10px -344px no-repeat #3996fe;
 	opacity:0.5;
 }
 
 .side_bar{
 	position:fixed;
 	width:210px;
-	background:#466079;
+	background:#237bff;
 	left:0px;
 	top:60px;
 	bottom:0px;
@@ -79,7 +79,7 @@ body{
 
 .user_info em{
 	font-weight:bold;
-	color:#1ab394;
+	color: #ae2126;
 }
 
 .menu_con{
@@ -95,7 +95,7 @@ body{
 }
 
 .menu_con .active{
-	background:url(../images/icons.png) 190px -283px no-repeat #2f4050;
+	background:url(../images/icons.png) 190px -283px no-repeat #3996fe;
 	border-bottom:0px;
 }
 
@@ -151,7 +151,7 @@ body{
 }
 
 .sub_menu li{
-	background:url(../images/icons.png) 190px -283px no-repeat #2f4050;
+	background:url(../images/icons.png) 190px -283px no-repeat #3996fe;
 }
 
 .sub_menu a{
@@ -275,7 +275,8 @@ body{
 	width:100%;
 	height:100%;
 	z-index:-9999;
-	background:url(../images/login-bg.jpg) no-repeat;
+	background:url(../images/xuancheng_bg.jpg) no-repeat;
+	background-size: cover;
 }
 
 .login_form{
@@ -304,7 +305,7 @@ body{
 .login_title{
   line-height:72px;
   text-align:center;
-  background:#1ab394;
+  background: #ae2126;
   color:#fff;
   font-size:20px;
 }
@@ -336,7 +337,7 @@ body{
   height:32px;
   border:0px;
   border-radius:4px;
-  background:#1ab394;
+  background: #ae2126;
   color:#fff;
   cursor:pointer;
 }
@@ -627,7 +628,7 @@ body{
 	height:28px;
 	border:0px;
 	border-radius:4px;
-	background:#1ab394;
+	background: #ae2126;
 	color:#fff;
 	cursor:pointer;
   }

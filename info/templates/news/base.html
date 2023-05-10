@@ -17,7 +17,7 @@
 <body>
     <div class="header_con">
         <div class="header">
-            <a href="#" class="logo fl"><img src="../../static/news/images/logo.png" alt="logo"></a>
+            <a href="/" class="logo fl"><img src="../../static/news/images/logo_hfut.png" style="max-width: 140px; max-height: 33px;" alt="logo"></a>
 
             {# 3. header部分 #}
             {% block headerBlock %} {% endblock %}
@@ -30,7 +30,7 @@
                     {% if data.user_info.avatar_url %}
                         <img src="{{ data.user_info.avatar_url }}" class="lgin_pic">
                     {% else %}
-                        <img src="../../static/news/images/person01.png" class="lgin_pic">
+                        <img src="../../static/news/images/bilibili_user_pic.jpg" style="max-width: 30px; max-height: 30px;" class="lgin_pic">
                     {% endif %} 
 
                     <a href="/user/user_index">{{ data.user_info.nick_name }}</a>
@@ -94,18 +94,18 @@
         {% endblock %}
     </div>
     <div class="footer">
-        <div class="footer_links">
-            <a href="">关于我们</a>
-            <span>|</span>
-            <a href="">联系我们</a>
-            <span>|</span>
-            <a href="">招聘人才</a>
-            <span>|</span>
-            <a href="">友情链接</a>
-        </div>
+{#        <div class="footer_links">#}
+{#            <a href="">关于我们</a>#}
+{#            <span>|</span>#}
+{#            <a href="">联系我们</a>#}
+{#            <span>|</span>#}
+{#            <a href="">招聘人才</a>#}
+{#            <span>|</span>#}
+{#            <a href="">友情链接</a>#}
+{#        </div>#}
         <p class="copyright">
-            CopyRight © 2018 新经资讯信息技术有限公司 All Rights Reserved<br />
-电话：010-****888    京ICP备*******8号
+            CopyRight © 2023 合肥工业大学<br />
+            计算机网络课程设计
         </p>
     </div>
 

@@ -32,7 +32,7 @@
         {% if data.user_info %}
             <form action="" class="comment_form" data-newsid="{{ data.news_info.id }}">
                 <div class="person_pic">
-                    <img src="../../static/news/images/cat.jpg" alt="用户图标">
+                    <img src="../../static/news/images/liukanshan.jpg" alt="用户图标">
                 </div>
                 <textarea placeholder="请发表您的评论" class="comment_input"></textarea>
                 <input type="submit" name="" value="评 论" class="comment_sub">
@@ -191,7 +191,7 @@
         {% if data.news_info.author.avatar_url %}
             <a href="#" class="author_pic"><img src="{{ data.news_info.author.avatar_url }}" alt="author_pic"></a>
         {% else %}
-            <a href="#" class="author_pic"><img src="../../static/news/images/user_pic.png" alt="author_pic"></a>
+            <a href="#" class="author_pic"><img src="../../static/news/images/bilibili_user_pic.jpg" alt="author_pic"></a>
         {% endif %}
 
         <a href="#" class="author_name">{{ data.news_info.author.nick_name }}</a>

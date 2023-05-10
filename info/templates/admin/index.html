@@ -9,7 +9,7 @@
 </head>
 <body>
 	<div class="header">
-		<a href="#" class="logo fl"><img src="../../static/admin/images/logo.png" alt="logo"></a>
+		<a href="/" class="logo fl"><img src="../../static/admin/images/logo_hfut.png" style="max-width: 220px; max-height: 33px;" alt="logo"></a>
 		<a href="#" class="logout fr">退 出</a>
 	</div>
 	
@@ -18,7 +18,7 @@
 			{% if data.user_info.avatar_url %}
                 <img src="{{ data.user_info.avatar_url }}" alt="张大山">
             {% else %}
-                <img src="../../static/admin/images/person.png" alt="张大山">
+                <img src="../../static/admin/images/banana.jpg" alt="张大山">
             {% endif %}
 
             <p>欢迎你 <em>{{ data.user_info.nick_name }}</em></p>
