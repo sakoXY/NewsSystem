@@ -10508,3 +10508,39 @@ WARNING _internal.py:186  * Debugger is active!
 INFO _internal.py:186  * Debugger PIN: 581-365-903
 INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\admin\\views.py', reloading
 INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 581-365-903
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 13:51:53] "GET /admin/index HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 13:51:53] "[36mGET /static/admin/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 13:51:53] "[36mGET /static/admin/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 13:51:53] "[36mGET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 13:51:53] "[36mGET /static/admin/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 13:51:53] "[36mGET /static/admin/images/person.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 13:51:53] "[36mGET /static/admin/html/user_count.html HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 13:51:53] "[36mGET /static/admin/images/icons.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 13:51:53] "[36mGET /static/admin/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 13:51:53] "[36mGET /static/admin/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 13:51:53] "[36mGET /static/admin/js/echarts.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 13:51:53] "[36mGET /favicon.ico HTTP/1.1[0m" 304 -
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\admin\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 581-365-903
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 13:53:43] "[32mGET /admin/login HTTP/1.1[0m" 302 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 13:53:43] "GET /admin/index HTTP/1.1" 200 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 13:53:43] "[36mGET /static/admin/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 13:53:43] "[36mGET /static/admin/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 13:53:43] "[36mGET /static/admin/js/jquery-1.12.4.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 13:53:43] "[36mGET /static/admin/images/logo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 13:53:43] "[36mGET /static/admin/images/person.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 13:53:43] "[36mGET /static/admin/images/icons.png HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 13:53:43] "[36mGET /static/admin/html/user_count.html HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 13:53:43] "[36mGET /static/admin/css/reset.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 13:53:43] "[36mGET /static/admin/css/main.css HTTP/1.1[0m" 304 -
+INFO _internal.py:186 127.0.0.1 - - [10/May/2023 13:53:43] "[36mGET /static/admin/js/echarts.min.js HTTP/1.1[0m" 304 -
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\admin\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
+WARNING _internal.py:186  * Debugger is active!
+INFO _internal.py:186  * Debugger PIN: 581-365-903
+INFO _internal.py:186  * Detected change in 'D:\\code\\NewsSystem\\NewsSystem\\info\\modules\\passport\\views.py', reloading
+INFO _internal.py:186  * Restarting with stat
