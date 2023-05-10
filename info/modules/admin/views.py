@@ -8,6 +8,64 @@ from ...utils.commons import user_login_data
 from ...utils.response_code import RET
 
 
+# 新闻版式编辑
+# 请求路径: /admin/news_edit
+# 请求方式: GET
+# 请求参数: GET, p, keywords
+# 返回值:GET,渲染news_edit.html页面,data字典数据
+@admin_blue.route('/news_edit')
+def news_edit():
+    """
+    1. 获取参数,p,keywords
+    2. 参数类型转换
+    3. 分页查询用户数据
+    4. 获取分页对象属性,总页数,当前页,当前页对象列表
+    5. 将对象列表,转成字典列表
+    6. 拼接数据,渲染页面
+    :return:
+    """
+    # 1. 获取参数,p
+    page = request.args.get("p", "1")
+    keywords = request.args.get("keywords", "")
+
+    # 2. 参数类型转换
+    try:
+        page = int(page)
+    except Exception as e:
+        page = 1
+
+    # 3. 分页查询待审核,未通过的新闻数据
+    try:
+
+        # 3.1判断是否有填写搜索关键
+        filters = []
+        if keywords:
+            filters.append(News.title.contains(keywords))
+
+        paginate = News.query.filter(*filters).order_by(News.create_time.desc()).paginate(page=page, max_per_page=10)
+    except Exception as e:
+        current_app.logger.error(e)
+        return render_template("admin/news_edit.html", errmsg="获取新闻失败")
+
+    # 4. 获取分页对象属性,总页数,当前页,当前页对象列表
+    totalPage = paginate.pages
+    currentPage = paginate.page
+    items = paginate.items
+
+    # 5. 将对象列表,转成字典列表
+    news_list = []
+    for news in items:
+        news_list.append(news.to_review_dict())
+
+    # 6. 拼接数据,渲染页面
+    data = {
+        "totalPage": totalPage,
+        "currentPage": currentPage,
+        "news_list": news_list
+    }
+    return render_template("admin/news_edit.html", data=data)
+
+
 # 获取/设置新闻审核详情
 # 请求路径: /admin/news_review_detail
 # 请求方式: GET,POST
