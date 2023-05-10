@@ -5,6 +5,9 @@
 3. session配置
 4. csrf配置
 """
+from datetime import datetime, timedelta
+from random import randint
+
 from flask import current_app
 
 from info import create_app, db, models  # 导入models的作用是让整个应用程序知道有models的存在
@@ -54,6 +57,33 @@ def create_superuser(username, password):
     return "创建成功"
 
 
-if __name__ == "__main__":
+# 为了图表好看,添加测试用户
+@manager.option('-t', '--test', dest='test')
+def add_test_user(test):
+    # 1. 定义容器
+    user_list = []
 
+    # 2. for循环创建1000个用户
+    for i in range(0, 1000):
+        user = User()
+        user.nick_name = "老王%s" % i
+        user.mobile = "138%08d" % i
+        user.password_hash = "pbkdf2:sha256:600000$kAovSighC9dCUwni$900c6222a2ff0819c113b96f8cee53243529262721ccfeaea4dec3472e86962e"
+        # 设置用户的登陆时间为近31天的
+        user.last_login = datetime.now() - timedelta(seconds=randint(0, 3600 * 24 * 31))
+
+        user_list.append(user)
+
+    # 3. 将用户添加到数据库中
+    try:
+        db.session.add_all(user_list)
+        db.session.commit()
+    except Exception as e:
+        current_app.logger.error(e)
+        return "添加测试用户失败"
+
+    return "添加测试用户成功"
+
+
+if __name__ == "__main__":
     manager.run()
