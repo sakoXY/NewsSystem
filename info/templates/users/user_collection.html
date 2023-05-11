@@ -15,7 +15,7 @@
         <ul class="article_list">
             {# 遍历用户收藏的新闻 #}
             {% for news in data.news_list %}
-                <li><a href="#">{{ news.title }}</a><span>{{ news.create_time }}</span></li>
+                <li><a href="/news/{{ news.id }}" target="_blank" onclick="window.close()">{{ news.title }}</a><span>{{ news.create_time }}</span></li>
             {% endfor %}
 
 

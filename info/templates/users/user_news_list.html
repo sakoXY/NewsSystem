@@ -16,7 +16,7 @@
             {# 遍历用户发布的新闻 #}
             {% for news in data.news_list %}
                 {% if news.status == 0 %}
-                    <li><a href="user_news_release.html">{{ news.title }}</a><em class="pass">已通过</em><span>{{ news.create_time }}</span></li>
+                    <li><a href="/news/{{ news.id }}" target="_blank" onclick="window.close()">{{ news.title }}</a><em class="pass">已通过</em><span>{{ news.create_time }}</span></li>
                 {% elif news.status == 1 %}
                     <li><a href="#">{{ news.title }}</a><em class="review">审核中</em><span>{{ news.create_time }}</span></li>
                 {% else %}
